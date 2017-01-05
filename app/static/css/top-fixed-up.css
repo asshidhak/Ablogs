@@ -1,0 +1,13 @@
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+  background-color: Menu;
+  /*background: url("../img/bodybackgroud.jpg");*/
+}
+.post {
+    margin-top: 38px;
+    border: 1px solid #e8eff1;
+    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}

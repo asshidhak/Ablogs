@@ -1,0 +1,13 @@
+<nav>
+    <ul class="pagination">
+        <li><a href="">&laquo;</a></li>
+        {% for page in pages %}
+            {% if page == current_page %}
+                <li class="active"><a>{{ page }}</a></li>
+            {% else %}
+                <li><a href="?page={{ page }}">{{ page }}</a></li>
+            {% endif %}
+        {% endfor %}
+        <li><a href="?page={{ current_page }}">&raquo;</a></li>
+    </ul>
+</nav>
