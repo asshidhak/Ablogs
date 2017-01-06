@@ -13,17 +13,17 @@ def paginate(context, object_list, page_count):
         pages.append(i)
     try:
         context['current_page'] = int(page)
-        context['article_list'] = paginator.page(page).object_list
+        context['article_list'] = paginator.page(page)
 
     except TypeError:
         context['current_page'] = 1
-        context['article_list'] = paginator.page(1).object_list
+        context['article_list'] = paginator.page(1)
 
     except PageNotAnInteger:
         context['current_page'] = 1
-        context['article_list'] = paginator.page(1).object_list
+        context['article_list'] = paginator.page(1)
     except EmptyPage:
         context['current_page'] = 1
-        context['article_list'] = paginator.page(1).object_list
+        context['article_list'] = paginator.page(1)
     context['pages']  = pages
     return ''

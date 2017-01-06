@@ -6,7 +6,7 @@ from django.shortcuts import get_object_or_404,HttpResponseRedirect,render
 from .forms import BlogCommentForm
 
 class IndexView(ListView):
-    template_name = "app/index.html"
+    template_name = "lw-index.html"
     context_object_name = "article_list"
 
     def get_queryset(self):
